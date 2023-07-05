@@ -1,0 +1,5 @@
+pyqt5
+qdarkstyle
+playsound
+notify-py
+psutil
