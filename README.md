@@ -1,2 +1,2 @@
 # SafeCharge
-Safe charge assistant
+Safe charge reminder
