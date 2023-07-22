@@ -1,2 +1,2 @@
-# SafeCharge
-Safe charge reminder
+# BatteryAlerte
+Battery status reminder
