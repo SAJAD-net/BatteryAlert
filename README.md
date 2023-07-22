@@ -1,2 +1,2 @@
-# BatteryAlerte
+# BatteryAlert
 Battery status reminder
