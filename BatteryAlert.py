@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
         MainWindow.setMinimumSize(QtCore.QSize(450, 672))
         MainWindow.setMaximumSize(QtCore.QSize(450, 672))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("./resources/safeCharge.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("./resources/BatteryAlert.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -75,9 +75,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "SafeCharge"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "BatteryAlert"))
         self.save_btn.setText(_translate("MainWindow", "Save"))
-        self.label.setText(_translate("MainWindow", "SafeCharge"))
+        self.label.setText(_translate("MainWindow", "BatteryAlert"))
         self.label_2.setText(_translate("MainWindow", "Charge Level"))
         self.alarm_checkbox.setText(_translate("MainWindow", "Alarm"))
         self.not_checkbox.setText(_translate("MainWindow", "Notification"))
@@ -95,7 +95,7 @@ class Ui_MainWindow(object):
 
     def notification(self):
         notification = Notify()
-        notification.title = "SafeCharge"
+        notification.title = "BatteryAlert"
         notification.message = f"Battery level reached {self.charge_level}"
 
         notification.send()	    
@@ -116,11 +116,11 @@ class Ui_MainWindow(object):
 		
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
-    safeCharge = QtWidgets.QMainWindow()
-    safeCharge.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+    batteryAlert = QtWidgets.QMainWindow()
+    batteryAlert.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     ui = Ui_MainWindow()
-    ui.setupUi(safeCharge)
-    safeCharge.show()
+    ui.setupUi(batteryAlert)
+    batteryAlert.show()
     sys.exit(app.exec_())     
         
  
